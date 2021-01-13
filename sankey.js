@@ -10650,7 +10650,7 @@
                                 else {
                                     for (f.lineEnd(), f.lineStart(), h = s - 1; h >= l; --h) f.point(y[h], _[h]);
                                     f.lineEnd(), f.areaEnd()
-                                } g & Ã¥ & (y[s] = +t(d, s, i), _[s] = +e(d, s, i), f.point(n ? +n(d, s, i) : y[s], u ? +u(d, s, i) : _[s]))
+                                } g && (y[s] = +t(d, s, i), _[s] = +e(d, s, i), f.point(n ? +n(d, s, i) : y[s], u ? +u(d, s, i) : _[s]))
                         }
                         if (p) return f = null, p + "" || null
                     }
