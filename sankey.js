@@ -11925,7 +11925,7 @@
                         }(a),
                         function (t) {
                             const totalSum = t.nodes.filter(node=>node.targetLinks.length==0).reduce((v,n)=> v+n.sourceLinks.reduce((v, sl) => v + sl.value, 0), 0)
-                            console.log('totalSum',totalSum)
+                            // console.log('totalSum',totalSum)
                             t.nodes.forEach((function (t) {
                                 // const nodeTotalSum = t.sourceLinks.reduce((o, sl) => sl.value + o, );
                                 // console.log('Total sum:', nodeTotalSum);
@@ -12277,7 +12277,7 @@
                             })).attr("y", (function (t) {
                                 return (t.y1 + t.y0) / 2
                             })).attr("dy", "0.35em").style("font-weight", "bold").attr("text-anchor", "end").style("fill", "#222").text((function (t) {
-                                console.log('v switcha',t)
+                                // console.log('v switcha',t)
                                 switch (e.label_type) {
                                     
                                     case "name":
